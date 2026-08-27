@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter News Category Filter",
+  "version": "1.0",
+  "description": "Filters X posts using an AI news category classifier.",
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "http://127.0.0.1:8000/*"
+  ],
+
+  "action": {
+    "default_title": "News Category Filter",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

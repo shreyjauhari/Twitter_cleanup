@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>News Filter</title>
+
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h1>News Filter</h1>
+
+            <p>
+                Select categories you want to hide
+            </p>
+
+        </div>
+
+
+        <!-- Category Filters -->
+        <div class="categories">
+
+            <label class="category">
+
+                <input
+                    type="checkbox"
+                    value="business"
+                >
+
+                <span>Business</span>
+
+            </label>
+
+
+            <label class="category">
+
+                <input
+                    type="checkbox"
+                    value="entertainment"
+                >
+
+                <span>Entertainment</span>
+
+            </label>
+
+
+            <label class="category">
+
+                <input
+                    type="checkbox"
+                    value="politics"
+                >
+
+                <span>Politics</span>
+
+            </label>
+
+
+            <label class="category">
+
+                <input
+                    type="checkbox"
+                    value="sport"
+                >
+
+                <span>Sport</span>
+
+            </label>
+
+
+            <label class="category">
+
+                <input
+                    type="checkbox"
+                    value="tech"
+                >
+
+                <span>Technology</span>
+
+            </label>
+
+        </div>
+
+
+        <!-- Save Button -->
+        <button id="saveButton">
+
+            Save Filters
+
+        </button>
+
+
+        <!-- Status Message -->
+        <p id="status"></p>
+
+    </div>
+
+
+    <script src="popup.js"></script>
+
+</body>
+</html>
