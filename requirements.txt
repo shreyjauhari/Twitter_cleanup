@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+torch
+transformers
+numpy
+scikit-learn
+pydantic
+
+dataset used is :https://www.kaggle.com/datasets/moazeldsokyx/bbc-news
